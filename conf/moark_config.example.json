@@ -1,0 +1,41 @@
+{
+  "base_url": "https://api.moark.com/v1",
+  "api_key": "your-api-key-here",
+  "text2img_model": "z-image-turbo",
+  "edit_model": "Qwen-Image-Edit",
+  "default_size": "1024x1024",
+  "available_sizes": [
+    "512x512",
+    "768x768",
+    "1024x1024",
+    "1280x768",
+    "768x1280",
+    "1280x960",
+    "960x1280",
+    "1440x1440",
+    "1536x1024",
+    "1024x1536"
+  ],
+  "timeout": 180,
+  "async_txt2img_models": [
+    "FLUX.1-dev",
+    "LongCat-Image",
+    "flux-1-schnell",
+    "Qwen-Image-2512",
+    "Z-Image",
+    "Qwen-Image"
+  ],
+  "async_edit_models": [
+    "LongCat-Image-Edit",
+    "Qwen-Image-Edit-2511",
+    "FLUX.1-Kontext-dev"
+  ],
+  "async_txt2vid_models": [
+    "stepvideo-t2v",
+    "Wan2.1-T2V-1.3B"
+  ],
+  "async_img2vid_models": [
+    "LTX-2",
+    "LongCat-Video"
+  ]
+}

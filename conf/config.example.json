@@ -1,0 +1,81 @@
+{
+  "version": "2.0.0",
+  "default_vendor": "moark",
+  "theme": "default",
+  "language": "zh-CN",
+  
+  "vendors": [
+    {
+      "vendor_id": "moark",
+      "name": "模力方舟",
+      "base_url": "https://api.moark.com/v1",
+      "api_key": "your-api-key",
+      "enabled": true,
+      "priority": 100,
+      "description": "支持文生图、图像编辑、文生视频、图生视频",
+      "support_text2img": true,
+      "support_edit": true,
+      "support_txt2vid": true,
+      "support_img2vid": true,
+      "text2img_models": [
+        "FLUX.1-dev",
+        "LongCat-Image",
+        "flux-1-schnell",
+        "Qwen-Image-2512",
+        "Z-Image",
+        "Qwen-Image"
+      ],
+      "edit_models": [
+        "LongCat-Image-Edit",
+        "Qwen-Image-Edit-2511",
+        "FLUX.1-Kontext-dev"
+      ],
+      "txt2vid_models": [
+        "stepvideo-t2v",
+        "Wan2.1-T2V-1.3B"
+      ],
+      "img2vid_models": [
+        "LTX-2"
+      ],
+      "timeout": 60,
+      "max_retries": 3
+    },
+    {
+      "vendor_id": "openai",
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "api_key": "sk-your-api-key",
+      "enabled": false,
+      "priority": 90,
+      "description": "DALL-E 图像生成",
+      "support_text2img": true,
+      "support_edit": false,
+      "support_txt2vid": false,
+      "support_img2vid": false,
+      "text2img_models": [
+        "dall-e-3",
+        "dall-e-2"
+      ],
+      "timeout": 120,
+      "max_retries": 3
+    }
+  ],
+  
+  "ui_settings": {
+    "default_size": "1024x1024",
+    "available_sizes": [
+      "512x512",
+      "768x768",
+      "1024x1024",
+      "1280x720",
+      "1920x1080"
+    ],
+    "default_n": 1,
+    "max_n": 4
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "log_dir": "logs"
+  }
+}

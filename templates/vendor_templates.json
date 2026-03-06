@@ -1,0 +1,88 @@
+{
+  "templates": [
+    {
+      "vendor_id": "moark",
+      "name": "模力方舟",
+      "base_url": "https://api.moark.com/v1",
+      "description": "支持文生图、图像编辑、文生视频、图生视频",
+      "support_text2img": true,
+      "support_edit": true,
+      "support_txt2vid": true,
+      "support_img2vid": true,
+      "default_models": {
+        "text2img": "FLUX.1-dev",
+        "edit": "Qwen-Image-Edit",
+        "txt2vid": "stepvideo-t2v",
+        "img2vid": "LTX-2"
+      },
+      "timeout": 60
+    },
+    {
+      "vendor_id": "openai",
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "description": "DALL-E 图像生成",
+      "support_text2img": true,
+      "support_edit": false,
+      "support_txt2vid": false,
+      "support_img2vid": false,
+      "default_models": {
+        "text2img": "dall-e-3"
+      },
+      "timeout": 120
+    },
+    {
+      "vendor_id": "anthropic",
+      "name": "Anthropic",
+      "base_url": "https://api.anthropic.com/v1",
+      "description": "Claude 大模型",
+      "support_text2img": false,
+      "support_edit": false,
+      "support_txt2vid": false,
+      "support_img2vid": false,
+      "timeout": 60
+    },
+    {
+      "vendor_id": "dashscope",
+      "name": "阿里云 DashScope",
+      "base_url": "https://dashscope.aliyuncs.com/api/v1",
+      "description": "阿里云通义万相",
+      "support_text2img": true,
+      "support_edit": false,
+      "support_txt2vid": false,
+      "support_img2vid": false,
+      "default_models": {
+        "text2img": "wanx-style-transfer"
+      },
+      "timeout": 60
+    },
+    {
+      "vendor_id": "siliconflow",
+      "name": "硅基流动",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "description": "多种开源模型",
+      "support_text2img": true,
+      "support_edit": false,
+      "support_txt2vid": false,
+      "support_img2vid": false,
+      "default_models": {
+        "text2img": "FLUX.1-dev"
+      },
+      "timeout": 60
+    },
+    {
+      "vendor_id": "volcengine",
+      "name": "火山引擎",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "description": "字节跳动豆包模型",
+      "support_text2img": true,
+      "support_edit": false,
+      "support_txt2vid": false,
+      "support_img2vid": false,
+      "default_models": {
+        "text2img": "doubao-image-generation"
+      },
+      "timeout": 60
+    }
+  ]
+}
